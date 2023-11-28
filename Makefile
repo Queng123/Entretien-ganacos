@@ -8,9 +8,6 @@ TEST_SRC	=	SudokuValidator/SudokuValidator.java \
 all:
 	@javac $(SRC)
 
-run: all
-	@java main
-
 test: all
 	@java main < tests/valid_sudoku.test
 	@java main < tests/invalid_sudoku.test
