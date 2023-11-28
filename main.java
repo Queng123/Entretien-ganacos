@@ -4,6 +4,10 @@ import java.io.IOException;
 import java.util.Arrays;
 
 public class main {
+    /**
+     * Loads a sudoku from a file.
+     * @param filepath The path to the file.
+     */
     public static int[][] loadSudoku(String filepath) {
         int[][] sudoku = null;
         try (BufferedReader br = new BufferedReader(new FileReader(filepath))) {
